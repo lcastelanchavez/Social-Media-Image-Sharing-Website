@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #upload_images,#image_view {
+            background-color: gray;
+        }
+
+    </style>
+	<title>Welcome</title>
+</head>
+<body>
+    <header>
+        <small> Author: Leslie Castelan Chavez | Email: lesliecastelan@g.ucla.edu</small>
+    </header>
+    
+    
+    <main>
+        <form enctype="multipart/form-data" method="post" action="https://www.pic.ucla.edu/~lesliecastelan/HW7/upload.php">
+            <fieldset id="upload_images"> 
+                <strong>Image Uploads</strong>
+                <br><br>
+                <input type="file" name="upload_pic"/>
+                <br>
+
+                <label for="img_title">IMAGE TITLE: </label>
+                <input type="text" name="user_img_title" id="img_title" />
+
+                <label for="user_name_input">YOUR NAME: </label>
+                <input type="text" name="user_name" id="user_name_input"/>
+                <br>
+
+                <input type="submit" name="submit_button_upload" value="Submit" >
+            </fieldset>
+        </form>
+        <br>
+        <br>
+        <form method="post" action="https://www.pic.ucla.edu/~lesliecastelan/HW7/display.php">
+            <fieldset id="image_view">
+                <strong>Image Viewing</strong>
+                <br><br>
+                <label for="person_viewed_id">PERSON</label>
+                <input type="text" name="person_to_view" id="person_viewed_id"/>
+                <br>
+
+                <label for="red">Red</label>
+                <input type="radio" id="red" value="red" name="color" checked/>
+                        
+                <label for="blue">Blue</label>
+                <input type="radio" id="blue " value="blue" name="color" />
+                <br>
+
+                <input type="submit" name="submit_button" value="Submit" />
+                
+                        
+            </fieldset>
+        </form>
+        
+        
+    </main>
+    <footer>
+        <small>&copy; 2021 All Rights Reserved Leslie Castelan Chavez</small>
+    </footer>
+</body>
+
+</html>
